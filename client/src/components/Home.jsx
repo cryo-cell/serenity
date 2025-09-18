@@ -17,7 +17,7 @@ function Home() {
   <Link to="/Editor">Editor</Link>;
 
   return (
-    <div className="bg-wb">
+    <div className="bg-wb mx-auto text-center">
 
       <header className=" text-blk">
         <div className="container mx-auto text-center bg-wb">

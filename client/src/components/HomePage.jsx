@@ -65,7 +65,7 @@ const handlePlanCheckout = async (planId) => {
   const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY); // or your actual key
 
   return (
-    <main className="p-6  mx-auto space-y-12">
+    <main className="p-6 mx-auto space-y-12">
       {/* Hero Section */}
 
       <section className="text-center space-y-4">
