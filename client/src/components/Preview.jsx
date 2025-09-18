@@ -2,8 +2,8 @@ import { useState } from "react";
 import Form from "./Form";
 import Card from "./Card";
 import { Menu } from "lucide-react";
-import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet";
-import { Button } from "@/components/ui/button";
+import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/Sheet";
+import { Button } from "@/components/ui/Button";
 
 import {
   FaFacebook,
