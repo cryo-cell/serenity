@@ -70,23 +70,23 @@ const handlePlanCheckout = async (planId) => {
 
       <section className="text-center space-y-4">
         
-        <h1 className="text-4xl font-bold">Build your site in minutes</h1>
-        <p className="text-lg text-gray-600">
+        <h1 className="text-4xl font-bold text-wb">Build your site in minutes</h1>
+        <p className="text-lg text-bb">
           Choose blocks, preview, and launch. No coding needed.
         </p>
         <Link
           to="/Editor"
-          className="inline-block bg-black text-white px-6 py-2 rounded-xl text-lg font-semibold hover:bg-gray-800 transition"
+          className="inline-block bg-bb text-wb px-6 py-2 rounded-xl text-lg font-semibold hover:bg-white transition text-db"
         >
-          <button className="bg-black text-white px-6 py-2 rounded-xl text-lg font-semibold hover:bg-gray-800 transition">
+          <button className="bg-bb text-wb px-6 py-2 rounded-xl text-lg font-semibold hover:bg-white transition  ">
             Start Building
           </button>
         </Link>
       </section>
 
       {/* How It Works */}
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold">How it works</h2>
+      {/*<section className="space-y-4">
+        <h2 className="text-2xl font-bold text-bb">How it works</h2>
         <div className="grid gap-4 md:grid-cols-3">
           {[
             "Choose blocks from our visual builder",
@@ -97,16 +97,16 @@ const handlePlanCheckout = async (planId) => {
               key={index}
               className="border rounded-2xl p-4 shadow-sm bg-white"
             >
-              <h3 className="font-bold text-lg mb-2">Step {index + 1}</h3>
-              <p className="text-gray-700">{step}</p>
+              <h3 className="font-bold text-lg mb-2 text-bb">Step {index + 1}</h3>
+              <p className="text-bb">{step}</p>
             </div>
           ))}
         </div>
-      </section>
+      </section>*/}
 
       {/* Pricing */}
-      <section className="space-y-4">
-        <h2 className="text-2xl font-bold text-center">Pricing</h2>
+      {/*<section className="space-y-4">
+        <h2 className="text-2xl font-bold text-center text-bb">Pricing</h2>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {[
             {
@@ -165,9 +165,9 @@ const handlePlanCheckout = async (planId) => {
               key={index}
               className="border rounded-2xl p-4 shadow-md bg-white flex flex-col"
             >
-              <h3 className="text-xl font-bold">{plan.title}</h3>
-              <p className="text-lg text-gray-800 mt-2 mb-4">{plan.price}</p>
-              <ul className="text-sm text-gray-600 space-y-1 flex-grow">
+              <h3 className="text-xl font-bold text-bb">{plan.title}</h3>
+              <p className="text-lg text-bbm mt-2 mb-4">{plan.price}</p>
+              <ul className="text-sm text-bb space-y-1 flex-grow">
                 {plan.features.map((f, i) => (
                   <li key={i}>• {f}</li>
                 ))}
@@ -175,16 +175,16 @@ const handlePlanCheckout = async (planId) => {
               <button
                 type="button"
                 onClick={() => handleSetupFeeCheckout(plan.id)}
-                className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4"
+                className="w-full bg-bb hover:bg-bbm text-white font-bold py-2 px-4 rounded mt-4"
               >
                 Select Premium Plan
               </button>
             </div>
           ))}
         </div>
-                  <p className=" flex justify-center">No monthly fees will be charged while the project is in development. Monthly fees begin only once your site and delivery system are fully deployed and live.</p>
+                  <p className=" flex justify-center text-bb">No monthly fees will be charged while the project is in development. Monthly fees begin only once your site and delivery system are fully deployed and live.</p>
 
-      </section>
+      </section>*/}
     </main>
   );
 }

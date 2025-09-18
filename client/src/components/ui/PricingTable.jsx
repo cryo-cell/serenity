@@ -29,10 +29,10 @@ const PricingTable = () => {
     value.toLocaleString("en-US", { style: "currency", currency: "USD" });
 
   return (
-    <div className="overflow-x-auto p-4 bg-white rounded shadow-md  mx-auto">
+    <div className="overflow-x-auto  bg-white rounded shadow-md  mx-auto  text-bbm">
       <table className="w-full border-collapse border border-gray-300 text-left">
-        <thead className="bg-gray-100">
-          <tr>
+        <thead className="bg-wb">
+          <tr className="text-bb">
             <th className="border border-gray-300 px-4 py-2">Monthly Revenue</th>
             <th className="border border-gray-300 px-4 py-2">Plan Name</th>
             <th className="border border-gray-300 px-4 py-2">Monthly Fee</th>
@@ -56,7 +56,7 @@ const PricingTable = () => {
               const monthlySavings = uberDoorDashFees - monthly;
 
               return (
-                <tr key={name} className="hover:bg-gray-50">
+                <tr key={name} className="hover:bg-wb">
                   <td className="border border-gray-300 px-4 py-2 font-semibold">
                     {formatCurrency(monthlyRevenue)}
                   </td>
